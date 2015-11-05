@@ -44,14 +44,14 @@ html, body, ul, p, h1, h2, h3 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+body {
+  background-color: black; }
+
 a, p, h1, h2, h3 {
   color: white; }
   @media (max-width: 480px) {
     a, p, h1, h2, h3 {
       text-align: center; } }
-
-html, body {
-  background-color: black; }
 
 a {
   text-decoration: none;
@@ -65,6 +65,13 @@ ul {
   list-style: none; }
   ul li {
     display: inline-block; }
+
+.content__video {
+  position: fixed;
+  top: 0;
+  z-index: -10000;
+  width: 100%;
+  opacity: .2; }
 
 .header, .section, .footer {
   width: 90%;
