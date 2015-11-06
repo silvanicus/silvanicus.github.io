@@ -92,6 +92,12 @@ a{
 
 ul{
 	list-style: none;
+	dsiplay:flex;
+
+	@media (max-width: 768px) {
+		justify-content: center;
+		margin-top: 2rem;
+	}
 
 	li{
 		display: inline-block;
@@ -122,6 +128,11 @@ ul{
 
 	.nav{
 		margin-top: 10px;
+
+		@media (max-width:768px) {
+			margin-top: 2rem;
+		}
+
 		&__link{
 			span{
 				margin: 0 .2rem;
