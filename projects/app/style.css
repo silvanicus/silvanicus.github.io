@@ -1,75 +1,70 @@
-body{
-	margin: 0;
-	padding: 0;
-	font-family: 'Roboto', sans-serif;
-	background: gainsboro;
-}
+@charset "UTF-8";
+/* Author: Silvana Ramírez // Project: TV SHOW App */
+/* Year: 2015 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: gainsboro; }
+  body #app-container {
+    width: 100%;
+    overflow: hidden; }
+    body #app-container #app-header {
+      width: 100%;
+      height: 10vh;
+      position: fixed;
+      background-color: maroon;
+      text-align: center; }
+      body #app-container #app-header h1 {
+        color: white;
+        line-height: 10vh;
+        font-size: 20px; }
+    body #app-container #app-body {
+      padding-top: 15vh;
+      width: 80%;
+      margin: 0 auto;
+      min-height: 75vh; }
+      body #app-container #app-body .search-form {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 22px; }
+        body #app-container #app-body .search-form input[type="text"] {
+          padding: 12px 16px;
+          border-radius: 3px;
+          border: none;
+          width: 300px; }
+      body #app-container #app-body .tv-show {
+        width: 100%;
+        overflow: hidden;
+        padding: 16px;
+        background-color: white;
+        margin-bottom: 16px;
+        display: block;
+        border-radius: 10px; }
+        body #app-container #app-body .tv-show:hover {
+          background-color: #ecf0f1;
+          cursor: pointer; }
+        body #app-container #app-body .tv-show .img-container {
+          width: 20%; }
+          body #app-container #app-body .tv-show .img-container .tv-show-img {
+            max-width: 100%;
+            float: left;
+            padding: 20px 0; }
+        body #app-container #app-body .tv-show .left {
+          float: left; }
+        body #app-container #app-body .tv-show .right {
+          float: right; }
+        body #app-container #app-body .tv-show .info {
+          width: 75%; }
+    body #app-container #app-footer {
+      width: 60%;
+      margin: 0 auto;
+      min-height: 10vh;
+      text-align: center;
+      border-top: 1px solid silver;
+      color: silver;
+      font-size: 13px; }
 
-#app-container{
-	width: 100%;
-	overflow: hidden;
-}
-
-#app-header{
-	width: 100%;
-	height: 10vh;
-	position: fixed;
-	background-color: maroon;
-	text-align: center;
-}
-
-#app-header h1{
-	color: white;
-	line-height: 10vh;
-	font-size: 20px;
-}
-
-#app-body{
-	padding-top:15vh;
-	width: 80%;
-	margin: 0 auto;
-	min-height: 75vh;
-}
-
-.tv-show{
-	width: 100%;
-	overflow: hidden;
-	padding:16px;
-	background-color: white;
-	margin-bottom: 16px;
-	display: block;
-	border-radius: 10px;
-}
-
-.tv-show:hover{
-	background-color: #ecf0f1;
-	cursor: pointer;
-}
-
-.tv-show-img{
-	max-height: 180px;
-	float: left;
-	padding: 20px 0;
-}
-
-.left, .info{
-	display: inline-block;
-	float:left;
-}
-
-.left{
-	width: 20%;
-}
-.info{
-	width:80%;
-}
-
-#app-footer{
-	width: 60%;
-	margin: 0 auto;
-	min-height: 10vh;
-	text-align: center;
-	border-top: 1px solid silver;
-	color:silver;
-	font-size: 13px;
-}
+/*# sourceMappingURL=style.css.map */
