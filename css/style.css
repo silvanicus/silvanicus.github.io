@@ -22,13 +22,13 @@
 @keyframes btn_contact_mobile {
   0% {
     background: mediumvioletred;
-    margin-left: 0; }
+    margin-left: -5rem; }
   50% {
     background: deeppink;
-    margin-left: 16rem; }
+    margin-left: 8rem; }
   100% {
     background: darkviolet;
-    margin-left: 0rem; } }
+    margin-left: -5rem; } }
 @keyframes runner {
   0% {
     opacity: 1;
@@ -46,6 +46,9 @@ html, body, ul, p, h1, h2, h3 {
 
 body {
   background-color: black; }
+  @media (max-width: 480px) {
+    body {
+      text-align: center; } }
 
 a, p, h1, h2, h3 {
   color: white; }
@@ -62,7 +65,12 @@ a {
     color: greenyellow; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  dsiplay: flex; }
+  @media (max-width: 768px) {
+    ul {
+      justify-content: center;
+      margin-top: 2rem; } }
   ul li {
     display: inline-block; }
 
@@ -81,6 +89,9 @@ ul {
   font-size: 1rem; }
 .header .nav {
   margin-top: 10px; }
+  @media (max-width: 768px) {
+    .header .nav {
+      margin-top: 2rem; } }
   .header .nav__link span {
     margin: 0 .2rem; }
 
@@ -97,16 +108,29 @@ ul {
     .section__text_medium {
       margin: 2rem 0;
       font-size: 1.2rem; } }
+.section__list {
+  border-bottom: 3px solid white;
+  padding-bottom: 50px;
+  margin-bottom: 30px; }
+  .section__list__item {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    color: grey; }
 .section__line {
   border: none;
   border-top: 4px solid white;
   width: 50%;
   display: block;
   margin: 10rem 0 2rem 0; }
+  @media (max-width: 768px) {
+    .section__line {
+      width: 100%;
+      margin: 4rem 0 2rem 0; } }
   @media (max-width: 480px) {
     .section__line {
       width: 100%;
-      margin: 5rem 0; } }
+      margin: 3rem 0; } }
 .section__button {
   background: mediumvioletred;
   padding: 1rem;
@@ -135,6 +159,10 @@ ul {
       -ms-animation: btn_contact_mobile 4s 1s infinite linear alternate;
       -o-animation: btn_contact_mobile 4s 1s infinite linear alternate;
       animation: btn_contact_mobile 4s 1s infinite linear alternate; } }
+.section__button {
+  margin: 2rem 0 1rem; }
+.section__buttonList {
+  margin: 0; }
 
 .footer__text {
   font-size: 0.75rem; }
@@ -192,5 +220,8 @@ ul {
   -ms-animation: runner 4s 1s linear alternate;
   -o-animation: runner 4s 1s linear alternate;
   animation: runner 4s 1s linear alternate; }
+  @media (max-width: 480px) {
+    .icon-runner:before {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */

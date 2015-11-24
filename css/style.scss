@@ -2,6 +2,9 @@
 /*Year: 2015*/
 /*Css convention: BEM--> https://en.bem.info*/
 
+$mobile: 480px;
+$tablet: 768px;
+
 @font-face {
 	font-family: 'icomoon';
 	src:url('../fonts/icomoon.eot?jonav');
@@ -34,16 +37,16 @@
 @keyframes btn_contact_mobile {
   0% {
     background: mediumvioletred;
-    margin-left: 0;
+    margin-left: -5rem;
   }
   50% {
     background: deeppink;
-    margin-left: 16rem;
+    margin-left: 8rem;
 
   }
   100% {
     background: darkviolet;
-    margin-left: 0rem;
+    margin-left: -5rem;
   }
 }
 
@@ -68,12 +71,16 @@ html, body, ul, p, h1, h2, h3{
 }
 body{
 	background-color: black;
+
+	@media(max-width: $mobile) {
+		text-align: center;
+	}
 }
 
 a, p, h1, h2, h3{
 	color: white;
 
-	@media(max-width: 480px) {
+	@media(max-width: $mobile) {
         text-align: center;
     }
 }
@@ -94,7 +101,7 @@ ul{
 	list-style: none;
 	dsiplay:flex;
 
-	@media (max-width: 768px) {
+	@media (max-width: $tablet) {
 		justify-content: center;
 		margin-top: 2rem;
 	}
@@ -129,7 +136,7 @@ ul{
 	.nav{
 		margin-top: 10px;
 
-		@media (max-width:768px) {
+		@media (max-width: $tablet) {
 			margin-top: 2rem;
 		}
 
@@ -147,7 +154,7 @@ ul{
 		text-transform: uppercase;
 		margin: 0;
 
-		@media(max-width: 480px) {
+		@media(max-width: $mobile) {
 	       margin: 2rem 0;
 	       font-size: 1.5rem;
 	    }
@@ -155,10 +162,23 @@ ul{
 	&__text_medium{
 		text-transform: uppercase;
 
-		@media(max-width: 480px) {
+		@media(max-width: $mobile) {
 	       margin: 2rem 0;
 	       font-size: 1.2rem;
 	    }
+	}
+
+	&__list{
+		border-bottom: 3px solid white;
+		padding-bottom: 50px;
+		margin-bottom: 30px;
+
+		&__item{
+			display: block;
+			width: 100%;
+			margin: 5px 0;
+			color: grey;
+		}
 	}
 
 	&__line{
@@ -168,9 +188,14 @@ ul{
 		display: block;
 		margin: 10rem 0 2rem 0;
 
-		@media(max-width: 480px) {
-	       width: 100%;
-			margin: 5rem 0;
+		@media (max-width:768px) {
+			width: 100%;
+			margin: 4rem 0 2rem 0;
+	    }
+
+		@media(max-width: $mobile) {
+			width: 100%;
+			margin: 3rem 0;
 	    }
 
 	}
@@ -200,7 +225,7 @@ ul{
 			color: black;
 		}
 
-		@media(max-width: 480px) {
+		@media(max-width: $mobile) {
 	       background-color: mediumvioletred;
 
 	       -webkit-animation: btn_contact_mobile 4s 1s infinite linear alternate;
@@ -209,6 +234,12 @@ ul{
 			-o-animation: btn_contact_mobile 4s 1s infinite linear alternate;
 			animation: btn_contact_mobile 4s 1s infinite linear alternate;
 	    }
+	}
+	&__button{
+		margin: 2rem 0 1rem;
+	}
+	&__buttonList{
+		margin: 0;
 	}
 }
 
@@ -277,6 +308,10 @@ ul{
 	-ms-animation: runner 4s 1s linear alternate;
 	-o-animation: runner 4s 1s linear alternate;
 	animation: runner 4s 1s linear alternate;
+
+	@media (max-width: $mobile) {
+		display: none;
+	}
 }
 
 
