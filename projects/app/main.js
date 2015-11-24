@@ -54,9 +54,18 @@ $(function() {
 
 	$('#app-body')
 		.find('form')
-		.click(function onSubmit (ev) {
-			ev.preventDefault();
-			console.log(this);
+		.submit(function onSubmit (ev) {
+			event.preventDefault();
+			var busqueda = $(this)
+				.find('input[type="text"]')
+				.val();
+
+			alert('Hemos buscado' + ' ' + busqueda);
 		})
+
+	$.ajax({
+		url: "http://api.tvmaze.com/shows",
+
+	})
 
 })
