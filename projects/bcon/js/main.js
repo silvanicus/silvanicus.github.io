@@ -1,14 +1,10 @@
 $(function(){
 
     //Preload images + spinner
-
-    $.preloadImages = function() {
-      for (var i = 0; i < arguments.length; i++) {
-        $("<img />").attr("src", arguments[i]);
-      }
-    }
-    $.preloadImages("images/02.png", "images/02m.png", "images/03.png", "images/03m.png", "images/04.png", "images/04m.png", "images/05.png", "images/05m.png", "images/06.png", "images/06m.png", "images/07.png", "images/07m.png", "images/08.png", "images/08m.png");
-
+    $(window).load(function(){
+        $('#cover').fadeOut(1000);
+    })
+    
     //Slider
 
     setInterval(function () {
