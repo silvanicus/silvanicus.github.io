@@ -49,8 +49,29 @@ $(function() {
 
 	// })*/
 
-	// submit search form
+	
+	// Render shows
 
+	var $tvContainer = $('#app-body').find('.tv-shows');
+
+	function renderShows(shows){
+
+		shows.forEach(function(show){
+			var article = template
+				.replace(':name:', show.name)
+				.replace(':img:', show.image.medium)
+				.replace(':summary:', show.summary)
+				.replace(':img alt:', show.name + 'logo');
+
+				var $article = $(article);
+					
+				$tvContainer.append($article);
+
+		})
+	}
+
+	
+	// submit search form
 
 	$('#app-body')
 		.find('form')
@@ -60,11 +81,50 @@ $(function() {
 				.find('input[type="text"]')
 				.val();
 
-			alert('Hemos buscado' + ' ' + busqueda);
+			$tvContainer.find('.tv-show').remove();
+
+			var $loader = $('<div class="loader"></div>');
+
+			$loader.appendTo($tvContainer);
+
+			$.ajax({
+				url: "http://api.tvmaze.com/search/shows",
+				data: { q : busqueda },
+				success: function(res, textStatus, xhr){
+					
+					$loader.remove();
+					var shows = res.map(function(el){
+						return el.show;
+					})
+
+					renderShows(shows);
+							
+				}
+			})
 		})
 
+	// Working with template
+	
+	var template = '<article class="tv-show">' +
+					'<div class="left img-container">' +
+						'<img src=":img:" alt=":img alt:" class="tv-show-img">' +
+					'</div>' +
+
+					'<div class="right info">' +
+						'<h1>:name:</h1>' +
+						'<p>:summary:</p>' +
+					'</div>' +
+					'</article>';	
+
+	// Working with AJAX
+
 	$.ajax({
-		url: "http://api.tvmaze.com/shows",
+		url: "http://api.tvmaze.com/shows", // Donde va a hacer el request de los datos
+		success: function(shows, textStatus, xhr){
+			$tvContainer.find('.loader').remove();
+			renderShows(shows);
+		
+		} // Qué parametros devuelve si se pudo acceder a la data. Permite 3 parámtros, entre esos toda la data del server.
 
 	})
 
