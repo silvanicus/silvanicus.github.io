@@ -188,10 +188,14 @@ ul{
 }
 
 .section{
+	a{
+		text-decoration: underline;
+	}
 	
 	&__text_big{
 		text-transform: uppercase;
 		margin: 0;
+		letter-spacing: 2px;
 
 		@media(max-width: $mobile) {
 	       margin: 2rem 0;
@@ -208,7 +212,7 @@ ul{
 	}
 
 	&__list{
-		border-bottom: 3px solid white;
+		border-bottom: 1px solid rgba(white,.1);
 		padding-bottom: 50px;
 		margin-bottom: 30px;
 
