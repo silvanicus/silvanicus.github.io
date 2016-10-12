@@ -1,9 +1,14 @@
-/*Author: Silvana Ramírez*/
-/*Year: 2015*/
-/*Css convention: BEM--> https://en.bem.info*/
+/*
+author: Silvana Ramírez silvana.ramirez85@gmail.com
+year: 2016
+credits normalize.scss - https://github.com/guerrero/normalize.scss
+*/
 
+@import 'normalize';
 @import 'animate';
 @import 'font';
+
+$txt: 'Roboto', sans-serif;
 
 $mobile: 480px;
 $tablet: 768px;
@@ -13,13 +18,14 @@ $tablet: 768px;
 html, body, ul, p, h1, h2, h3{
 	margin: 0;
 	padding: 0;
-	font-family: 'Oswald', sans-serif;
+	font-family: $txt;
 	letter-spacing: 0.01rem;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 body{
 	background-color: black;
+	font-size: 14px;
 
 	@media(max-width: $mobile) {
 		text-align: center;
@@ -36,7 +42,6 @@ a, p, h1, h2, h3{
 
 a{
 	text-decoration: none;
-
 	transition-property: color;
 	transition-duration: .2s;
 	transition-timing-function: linear;
@@ -59,6 +64,13 @@ ul{
 		display: inline-block;
 
 	}
+}
+.content{
+	display: block;
+	max-width: 970px;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 2%;
 }
 .cover{
 	background: black;
@@ -188,14 +200,12 @@ ul{
 }
 
 .section{
-	a{
-		text-decoration: underline;
-	}
 	
 	&__text_big{
 		text-transform: uppercase;
 		margin: 0;
-		letter-spacing: 2px;
+		font-size: 1.5em;
+		letter-spacing: 1px;
 
 		@media(max-width: $mobile) {
 	       margin: 2rem 0;
@@ -204,6 +214,7 @@ ul{
 	}
 	&__text_medium{
 		text-transform: uppercase;
+		font-size: 1.3em;
 
 		@media(max-width: $mobile) {
 	       margin: 2rem 0;
@@ -340,6 +351,12 @@ ul{
 	@media (max-width: $mobile) {
 		display: none;
 	}
+}
+
+/* SPECIFIC STYLES */
+
+#projects-list{
+	
 }
 
 

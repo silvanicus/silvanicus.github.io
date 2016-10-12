@@ -53,11 +53,11 @@ Dots for Background
 
 @keyframes level {
   0% {
-    opacity: .5;
+    opacity: .2;
     transform: initial;
   }
   25% {
-    opacity: .8;
+    opacity: .6;
   }
   50% {
     opacity: .3;
@@ -65,10 +65,10 @@ Dots for Background
     transform: translate(5%) rotate(40deg);
   }
   75% {
-    opacity: .8;
+    opacity: .6;
   }
   100% {
-    opacity: .5;
+    opacity: .2;
     transform: initial;
   }
 }
