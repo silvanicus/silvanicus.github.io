@@ -26,6 +26,7 @@ html, body, ul, p, h1, h2, h3{
 body{
 	background-color: black;
 	font-size: 14px;
+	color: white;
 
 	@media(max-width: $mobile) {
 		text-align: center;
@@ -62,6 +63,8 @@ ul{
 
 	li{
 		display: inline-block;
+		color: white;
+		width: 100%;
 
 	}
 }
@@ -222,6 +225,8 @@ ul{
 	    }
 	}
 
+
+
 	&__list{
 		border-bottom: 1px solid rgba(white,.1);
 		padding-bottom: 50px;
@@ -240,7 +245,7 @@ ul{
 		border-top: 4px solid white;
 		width: 50%;
 		display: block;
-		margin: 10rem 0 2rem 0;
+		margin: 4em 0 2em 0;
 
 		@media (max-width:768px) {
 			width: 100%;
@@ -256,7 +261,7 @@ ul{
 	&__button{
 		background: mediumvioletred;
 		padding: 1rem;
-		margin: 2rem 0 1rem;
+		margin: 2em 0 1em;
 		display: inline-block;
 		text-transform: uppercase;
 		font-weight: bold;

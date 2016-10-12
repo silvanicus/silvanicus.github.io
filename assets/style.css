@@ -508,7 +508,8 @@ html, body, ul, p, h1, h2, h3 {
 
 body {
   background-color: black;
-  font-size: 14px; }
+  font-size: 14px;
+  color: white; }
   @media (max-width: 480px) {
     body {
       text-align: center; } }
@@ -535,7 +536,9 @@ ul {
       justify-content: center;
       margin-top: 2rem; } }
   ul li {
-    display: inline-block; }
+    display: inline-block;
+    color: white;
+    width: 100%; }
 
 .content {
   display: block;
@@ -677,7 +680,7 @@ ul {
   border-top: 4px solid white;
   width: 50%;
   display: block;
-  margin: 10rem 0 2rem 0; }
+  margin: 4em 0 2em 0; }
   @media (max-width: 768px) {
     .section__line {
       width: 100%;
@@ -689,7 +692,7 @@ ul {
 .section__button {
   background: mediumvioletred;
   padding: 1rem;
-  margin: 2rem 0 1rem;
+  margin: 2em 0 1em;
   display: inline-block;
   text-transform: uppercase;
   font-weight: bold;
