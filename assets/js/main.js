@@ -17,7 +17,7 @@ $(function(){
 
 
 	fetchJSONFile('http://silvanicus.github.io/assets/json/app.json', function(data){
-	    console.log(data);
+	    var myData = data;
 	});
 
 
