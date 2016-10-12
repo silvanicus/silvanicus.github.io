@@ -195,6 +195,10 @@ ul{
 		}
 
 		&__link{
+			li{
+				display: inline-block;
+				width: auto;
+			}
 			span{
 				margin: 0 .2rem;
 			}
