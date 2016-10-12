@@ -647,11 +647,11 @@ ul {
   @media (max-width: 768px) {
     .header .nav {
       margin-top: 2rem; } }
-  .header .nav__link li {
-    display: inline-block;
-    width: auto; }
   .header .nav__link span {
     margin: 0 .2rem; }
+  .header .nav__list li {
+    display: inline-block;
+    width: auto; }
 
 .section__text_big {
   text-transform: uppercase;

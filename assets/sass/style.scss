@@ -195,12 +195,14 @@ ul{
 		}
 
 		&__link{
+			span{
+				margin: 0 .2rem;
+			}
+		}
+		&__list{
 			li{
 				display: inline-block;
 				width: auto;
-			}
-			span{
-				margin: 0 .2rem;
 			}
 		}
 	}
