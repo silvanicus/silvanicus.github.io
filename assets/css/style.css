@@ -50,7 +50,12 @@ body {
       margin: 0 auto;
       line-height: 1.7; }
     body .content .content-title .btn {
-      margin-top: 3rem; }
+      margin-top: 3rem;
+      transition: all 0.3s ease-in-out;
+      border-radius: 2px; }
+      body .content .content-title .btn:hover {
+        background: white;
+        color: crimson; }
     body .content .content-title .social {
       width: 40%;
       display: flex;
@@ -111,6 +116,12 @@ body {
       width: 30%; }
     body .content .main .col-2 {
       width: 60%; }
+
+footer {
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.03); }
+  footer p {
+    font-size: 12px; }
 
 .btn {
   display: inline-block;
