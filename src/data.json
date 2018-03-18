@@ -1,0 +1,61 @@
+{
+    "name": "SILVANA RAMÍREZ VELÁSQUEZ",
+    "avatar": {
+        "alt":"My Avatar",
+        "url":"assets/images/my.jpg"
+    },
+    "title":"SENIOR FRONTEND PRODUCT DEVELOPER",
+    "desc":"Hi! I'm Silvana, a programmer, designer, AG triathlete and marathon runner from Bogotá - Colombia. In my 20s I designed and art directed web products and brand design for clients in Hong Kong, London, USA and Latin America. In my 30s I code, specially Js in the frontend. I currently work for Tambourine as a Product Leader",
+    "footer":"© Silvana Ramírez Velásquez - Bogotá 2018",
+    "social":[
+        {
+            "name": "linkedin",
+            "url": "https://co.linkedin.com/in/silvanaramvel"
+        },
+        {
+            "name": "blog",
+            "url": "https://medium.com/@silram"
+        },
+        {
+            "name": "instagram",
+            "url": "https://www.instagram.com/silvanicus/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/silvanicus"
+        },
+        {
+            "name": "codewars",
+            "url": "https://www.codewars.com/users/Silvanicus"
+        },
+        {
+            "name": "strava",
+            "url": "https://www.strava.com/athletes/4272718"
+        }
+    ],
+    "tech": [ "HTML+CSS+SASS", "Git / Svn", 
+        "Js, ES6 (DOM Manipulation, Jquery)",
+        "Bootstrap, CSS Grids, CSS Flex",
+        "Basic Node, NPM modules",
+        "Webpack, Gulp",
+        "React,Vue"
+    ],
+    "calendar": [
+        {
+            "name": "Long Island Marathon",
+            "date":"May 4"
+        },
+        {
+            "name": "Chicago Marathon",
+            "date":"October 7"
+        }
+    ],
+    "projects":[
+        {
+            "name":"Triathlon Calculator",
+            "git":" ",
+            "url":" ",
+            "desc":" "
+        }
+    ]
+}
