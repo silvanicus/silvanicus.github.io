@@ -1,9 +1,11 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
 const data = require('./components/data.json');
-import Header from './components/header.js'
-import Footer from './components/footer.js'
-
+import React, {Component} from 'react';
+import {render} from 'react-dom';
+// ··· Cual es la diferencia entre usar require e import? Require es sólo de Node?
+//const React = require('react');
+//const ReactDOM = require('react-dom');
+import Header from './components/top-content/header.js';
+import Footer from './components/footer.js';
 
 
 function Main(props){
@@ -32,10 +34,9 @@ class Template extends React.Component {
     }
 }
 
-ReactDOM.render(
-    <Template/>,
-    document.getElementById('app')
-);
+//ReactDOM.render(¿qué renderizo?, ¿dónde?);
+const app = document.getElementById('app');
+render(<Template/>, app);
 
 const form = document.getElementById('form');
 form.onsubmit = function(event){

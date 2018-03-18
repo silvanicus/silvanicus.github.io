@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-const data = require('./data.json');
 
 class Form extends React.Component {
     constructor(props){
@@ -37,29 +36,4 @@ class Form extends React.Component {
         </section>;
     }
 }
-function Social(){
-    let list = data.social.map( social => <li><a className={social.name} href={social.url} target='_blank'>{social.name}</a></li>)
-    return(
-        <ul className="social">{list}</ul>
-    )
-}
-class Header extends React.Component{
-    render(){
-        return (
-            <section className='content-title'>
-                <div className='avatar'>
-                    <img
-                        className="avatar-img"
-                        src={this.props.avatar.url}
-                        alt={this.props.avatar.alt}
-                    />
-                </div>
-                <h1>{this.props.title}</h1>
-                <h2>{this.props.name}</h2>
-                <p>{this.props.desc}</p>
-                <Form/>
-            </section>
-        )
-    }
-}
-export default Header;
+export default Form;

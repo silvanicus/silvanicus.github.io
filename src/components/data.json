@@ -1,11 +1,11 @@
 {
     "name": "SILVANA RAMÍREZ VELÁSQUEZ",
     "avatar": {
-        "alt":"My Avatar",
-        "url":"assets/images/my.jpg"
+        "alt":"My Avatar - Silvana Ramirez",
+        "url":"http://localhost:9000/assets/images/me.jpg"
     },
     "title":"SENIOR FRONTEND PRODUCT DEVELOPER",
-    "desc":"Hi! I'm Silvana, a programmer, designer, AG triathlete and marathon runner from Bogotá - Colombia. In my 20s I designed and art directed web products and brand design for clients in Hong Kong, London, USA and Latin America. In my 30s I code, specially Js in the frontend. I currently work for Tambourine as a Product Leader",
+    "desc":"Hi! I'm Silvana, a programmer, designer, AG triathlete and marathon runner from Bogotá - Colombia. In my 20s I designed and art directed web products and brand design for clients in Hong Kong, London, USA and Latin America. In my 30s I code, travel and run marathons. I currently work for Tambourine as Product Frontend Leader",
     "footer":"© Silvana Ramírez Velásquez - 2018",
     "social":[
         {
@@ -37,8 +37,7 @@
         "Js, ES6 (DOM Manipulation, Jquery)",
         "Bootstrap, CSS Grids, CSS Flex",
         "Basic Node, NPM modules",
-        "Webpack, Gulp",
-        "React,Vue"
+        "Webpack, Gulp"
     ],
     "calendar": [
         {
