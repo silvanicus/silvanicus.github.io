@@ -1,0 +1,183 @@
+:root {
+  --pink: #f64c72;
+  --blue: #242582;
+  --purple: #553d67;
+  --softpurple: #99738E;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--blue);
+}
+
+body a {
+  transition: all .3 ease-in-out;
+}
+
+.content-title{
+  background: var(--pink);
+  padding: 3% 3% 2%;
+  position: relative;
+  text-align: center;
+  color: var(--blue);
+}
+
+.content-title h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-align:cneter;
+  margin: 0;
+}
+
+.content-title h2 {
+  margin: 0 0 1rem;
+}
+
+.content-title p {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.content-title p a {
+  font-weight: bold;
+}
+
+.content-title .content-title__avatar {
+  border-radius: 50%;
+  width: 100px; height: 100px;
+  display: inline-block; margin-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: rgba(68, 68, 68, 0.6) 0px 0px 20px;
+}
+
+.content-title .content-title__btn {
+  margin-top: 3rem;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--blue);
+  color: var(--white);
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.content-title .content-title__btn:hover {
+  background: var(--white);
+  color: var(--pink);
+}
+
+.social {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px auto 0;
+  padding: 0;
+}
+.social .social__item {
+  list-style: none;
+}
+
+.social .social__link {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  text-indent: -999999px;
+  transform: scale(0.7);
+  opacity: .6;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  transition: all .4s ease-in-out; 
+}
+
+.social .social__link--linkedin {
+  background-image: url(../svg/icon-linkedin.svg); 
+}
+
+.social .social__link--instagram {
+  background-image: url(../svg/icon-instagram.svg); 
+}
+
+.social .social__link--blog {
+  background-image: url(../svg/icon-blog.svg); 
+}
+
+.social .social__link--github {
+  background-image: url(../svg/icon-github.svg); 
+}
+
+.social .social__link--codewars {
+  background-image: url(../svg/icon-codewars.svg); 
+}
+
+.social .social__link--strava {
+  background-image: url(../svg/icon-strava.svg); 
+}
+
+body .content .content-title .social li a:hover {
+  transform: scale(1);
+  opacity: 1; 
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  padding-bottom: 6%;
+  color: white;
+}
+
+.main a {
+  color: var(--pink);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main span {
+  font-weight: 300;
+  font-size: 90%;
+  margin-left: 10px; 
+}
+
+.main ul li {
+  margin-bottom: 4px; 
+}
+
+.main ul li.list-content {
+  list-style: none;
+  padding: 0 10px;
+  opacity: .5;
+  margin-bottom: 10px; 
+}
+
+footer { 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align:center;
+  background-color: var(--blue);
+}
+
+footer p {
+  font-size: 12px;
+  color: var(--softpurple);
+}
+
+.text-center {
+  text-align: center;
+}
