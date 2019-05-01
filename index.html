@@ -1,124 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Silvana Ramirez | Frontend Developer | Product Frontend Senior Developer</title>
-    <style>
-    body {
-      font-family: "Open Sans", sans-serif;
-      margin: 0;
-      padding: 0;
-      font-size: 1rem;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
-      body h1, body h2, body h3 {
-        text-transform: uppercase; }
-      body a {
-        transition: all .3 ease-in-out; }
-        body .content .content-title h1 {
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          font-weight: 300;
-          text-align:cneter;
-          margin: 0; }
-        body .content .content-title h2 {
-          margin: 0 0 1rem; }
-        body .content .content-title p {
-          width: 50%;
-          margin: 0 auto;
-          line-height: 1.7; }
-        body .content .content-title .btn {
-          margin-top: 3rem;
-          transition: all 0.3s ease-in-out;
-          border-radius: 2px; }
-          body .content .content-title .btn:hover {
-            background: white;
-            color: crimson; }
-        body .content .content-title .social {
-          width: 40%;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          margin: 50px auto 0;
-          padding: 0; }
-          body .content .content-title .social li {
-            list-style: none; }
-            body .content .content-title .social li a {
-              display: inline-block;
-              width: 40px;
-              height: 30px;
-              text-indent: -999999px;
-              transform: scale(0.7);
-              opacity: .6;
-              background-position: center center;
-              background-repeat: no-repeat;
-              background-size: auto 30px;
-              transition: all .4s ease-in-out; }
-              body .content .content-title .social li a.linkedin {
-                background-image: url(assets/svg/icon-linkedin.svg); }
-              body .content .content-title .social li a.instagram {
-                background-image: url(assets/svg/icon-instagram.svg); }
-              body .content .content-title .social li a.blog {
-                background-image: url(assets/svg/icon-blog.svg); }
-              body .content .content-title .social li a.github {
-                background-image: url(assets/svg/icon-github.svg); }
-              body .content .content-title .social li a.codewars {
-                background-image: url(assets/svg/icon-codewars.svg); }
-              body .content .content-title .social li a.strava {
-                background-image: url(assets/svg/icon-strava.svg); }
-              body .content .content-title .social li a:hover {
-                transform: scale(1);
-                opacity: 1; }
-      body .content .main {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 5% 3%; }
-        body .content .main a {
-          color: crimson;
-          text-decoration: none;
-          font-weight: bold; }
-        body .content .main span {
-          font-weight: 300;
-          font-size: 90%;
-          margin-left: 10px; }
-        body .content .main ul li {
-          margin-bottom: 4px; }
-          body .content .main ul li.list-content {
-            list-style: none;
-            padding: 0 10px;
-            opacity: .5;
-            margin-bottom: 10px; }
-        body .content .main .col-1 {
-          width: 30%; }
-        body .content .main .col-2 {
-          width: 40%; }
-
-    /* footer {
-      padding: 20px 0; text-align:center;
-      background: rgba(0, 0, 0, 0.03); }
-      footer p {
-        font-size: 12px; } */
-
-    .btn {
-      display: inline-block;
-      padding: 1rem;
-      border: 1px solid white;
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 2px; }
-
-    .text-center {
-      text-align: center; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <title>Silvana Ramirez | Web software developer</title>
 </head>
 <body>
-    <div id="app"></div>
-    <script src="bundle.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <div id="app" class="content">
+    <header>
+    </header>
+    <section class="content-title">
+      <div class="content-title__avatar"><img class="avatar-img" src="assets/images/me.jpg" alt="My Avatar - Silvana Ramirez" style="width: 100%;"></div>
+      <h1>Hi, I'm Silvana</h1>
+      <h2>I design things and write software with and for people.</h2>
+      <p>Recently, I started working for <a href="https://www.hugeinc.com/">Huge Inc</a> as senior web engineer. I write my code mainly in javascript but I have experience integrating backend with Node, Java, Php and Python.</p>
+      <a href="mailto:silvana.ramirez85@gmail.com" class="content-title__btn">Email Me!</a>
+      <ul class="social">
+        <li class="social__item"><a class="social__link social__link--linkedin" href="https://co.linkedin.com/in/silvanaramvel" target="_blank">linkedin</a></li>
+        <li class="social__item"><a class="social__link social__link--blog" href="https://medium.com/@silram" target="_blank">blog</a></li>
+        <li class="social__item"><a class="social__link social__link--instagram" href="https://www.instagram.com/silvanicus/" target="_blank">instagram</a></li>
+        <li class="social__item"><a class="social__link social__link--github" href="https://github.com/silvanicus" target="_blank">github</a></li>
+        <li class="social__item"><a class="social__link social__link--codewars" href="https://www.codewars.com/users/Silvanicus" target="_blank">codewars</a></li>
+        <li class="social__item"><a class="social__link social__link--strava" href="https://www.strava.com/athletes/4272718" target="_blank">strava</a></li>
+      </ul>
+    </section>
+    <section class="main">
+      <div>
+        <h3>General Experience</h3>
+        <ul class="calendar">
+          <li>Agile <span>Scrum</span></li>
+          <li>Git / Svn<span> Git Flow</span></li>
+        </ul>
+        <h3>Frontend Experience</h3>
+        <ul class="tech">
+          <li>HTML5<span> Accesibility standards A / AA</span></li>
+          <li>CSS3<span> Sass</span></li>
+          <li>Javascript Es6+<span>Vue [nuxt] / React</span></li>
+          <li>Bundlers<span>Webpack</span></li>
+        </ul>
+        <h3>Backend Experience</h3>
+        <ul class="calendar">
+          <li>Node<span> Express</span></li>
+          <li>GraphQL<span> Apollo</span></li>
+          <li>CMS<span> AEM / Contentful / PHP based</span></li>
+        </ul>
+        <h3>DB Experience</h3>
+        <ul class="calendar">
+          <li>Redis<span> Node redis</span></li>
+          <li>MongoDB<span> Mongoose</span></li>
+          <li>SQL<span> mySQL / sequalize</span></li>
+        </ul>
+      </div>
+    </section>
+    <footer> 
+      <p class="copy">© 2019</p>
+    </footer>
+  </div>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 </body>
 </html>
