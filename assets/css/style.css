@@ -22,7 +22,7 @@ body a {
 
 .content-title{
   background: var(--pink);
-  padding: 3% 3% 2%;
+  padding: 3%;
   position: relative;
   text-align: center;
   color: var(--blue);
@@ -67,6 +67,7 @@ body a {
   margin: 50px auto 0;
   padding: 0;
 }
+
 .social .social__item {
   list-style: none;
 }
@@ -108,7 +109,7 @@ body a {
   background-image: url(../svg/icon-strava.svg); 
 }
 
-body .content .content-title .social li a:hover {
+.social li a:hover {
   transform: scale(1);
   opacity: 1; 
 }
@@ -119,7 +120,7 @@ body .content .content-title .social li a:hover {
   align-items: center;
   justify-content: center;
   padding: 3%;
-  padding-bottom: 6%;
+  padding-bottom: 15%;
   color: white;
 }
 
@@ -183,6 +184,10 @@ body .content .content-title .social li a:hover {
 
 
 @media only screen and (min-width: 1024px) {
+  .main{
+    padding-bottom: 5%;
+  }
+
   .main .main__column {
     max-width: 50%;
   }
