@@ -160,15 +160,16 @@ body .content .content-title .social li a:hover {
 }
 
 .footer .footer__btn {
+  border-top: 1px solid rgba(255,255,255,0.2);
   transition: all 0.3s ease-in-out;
   color: var(--white);
   display: inline-block;
+  cursor: pointer;
   padding: 1rem;
   width: 100%;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  cursor: pointer;
 }
 
 .footer .footer__btn:hover {
